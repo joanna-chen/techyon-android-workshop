@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +11,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="android_workshop.techyon.rockpaperscissors.MainActivity">
 
+    <ImageView
+        android:id="@+id/computer_hand"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/image_side_length"
+        android:layout_height="@dimen/image_side_length" />
     <TextView
+        android:id="@+id/score"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/user_hand"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/image_side_length"
+        android:layout_height="@dimen/image_side_length" />
+
+    <LinearLayout
+        android:id="@+id/control_buttons"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/rock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/paper_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/scissors_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>
